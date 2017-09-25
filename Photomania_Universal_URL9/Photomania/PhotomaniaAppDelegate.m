@@ -16,7 +16,7 @@
 // (or turn off line wrapping)
 
 @interface PhotomaniaAppDelegate() <NSURLSessionDownloadDelegate>
-@property (copy, nonatomic) void (^flickrDownloadBackgroundURLSessionCompletionHandler)();
+@property (copy, nonatomic) void (^flickrDownloadBackgroundURLSessionCompletionHandler)(void);
 @property (strong, nonatomic) NSURLSession *flickrDownloadSession;
 @property (strong, nonatomic) NSTimer *flickrForegroundFetchTimer;
 @property (strong, nonatomic) NSManagedObjectContext *photoDatabaseContext;
@@ -100,7 +100,7 @@
 // it is essentially waking us up to handle it
 // if we were in the foreground iOS would just call our delegate method and not bother with this
 
-- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler
 {
     // this completionHandler, when called, will cause our UI to be re-cached in the app switcher
     // but we should not call this handler until we're done handling the URL whose results are now available
@@ -213,7 +213,7 @@
 
 - (void)loadFlickrPhotosFromLocalURL:(NSURL *)localFile
                          intoContext:(NSManagedObjectContext *)context
-                 andThenExecuteBlock:(void(^)())whenDone
+                 andThenExecuteBlock:(void(^)(void))whenDone
 {
     if (context) {
         NSArray *photos = [self flickrPhotosAtURL:localFile];
@@ -289,7 +289,7 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
             //  (another thread might have sent it already in a multiple-tasks-at-once implementation)
             if (![downloadTasks count]) {  // any more Flickr downloads left?
                 // nope, then invoke flickrDownloadBackgroundURLSessionCompletionHandler (if it's still not nil)
-                void (^completionHandler)() = self.flickrDownloadBackgroundURLSessionCompletionHandler;
+                void (^completionHandler)(void) = self.flickrDownloadBackgroundURLSessionCompletionHandler;
                 self.flickrDownloadBackgroundURLSessionCompletionHandler = nil;
                 if (completionHandler) {
                     completionHandler();
