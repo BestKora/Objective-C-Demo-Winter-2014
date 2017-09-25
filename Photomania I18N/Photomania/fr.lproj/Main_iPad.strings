@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "JtY-Jf-nHq"; */
+"JtY-Jf-nHq.text" = "Title";
+
+/* Class = "IBUIBarButtonItem"; title = "URL"; ObjectID = "K9q-3q-sN1"; */
+"K9q-3q-sN1.title" = "URL";
+
+/* Class = "IBUINavigationController"; title = "Photographers"; ObjectID = "P0x-Dg-l7L"; */
+"P0x-Dg-l7L.title" = "Photographers";
+
+/* Class = "IBUITextView"; text = "http://www.stanford.edu"; ObjectID = "eQ4-pO-THh"; */
+"eQ4-pO-THh.text" = "http://www.stanford.edu";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "iT3-lA-wDf"; */
+"iT3-lA-wDf.text" = "Subtitle";

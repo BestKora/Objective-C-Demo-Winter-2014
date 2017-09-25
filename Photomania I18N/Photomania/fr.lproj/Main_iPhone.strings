@@ -1,0 +1,42 @@
+
+/* Class = "IBUINavigationItem"; title = "Shutterbug"; ObjectID = "2Nd-fj-gow"; */
+"2Nd-fj-gow.title" = "S.h.u.t.t.e.r.b.u.g";
+
+/* Class = "IBUIButton"; normalTitle = "Done"; ObjectID = "5gd-ax-YOE"; */
+"5gd-ax-YOE.normalTitle" = "D.o.n.e";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "65e-yS-HIT"; */
+"65e-yS-HIT.text" = "T.i.t.l.e";
+
+/* Class = "IBUINavigationController"; title = "Photographers"; ObjectID = "82a-vB-fcG"; */
+"82a-vB-fcG.title" = "P.h.o.t.o.g.r.a.p.h.e.r.s";
+
+/* Class = "IBUIButton"; normalTitle = "Filter Image"; ObjectID = "9XA-L9-DPA"; */
+"9XA-L9-DPA.normalTitle" = "F.i.l.t.e.r I.m.a.g.e";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "9cW-cD-xJg"; */
+"9cW-cD-xJg.text" = "Title";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "GDg-LX-NP7"; */
+"GDg-LX-NP7.text" = "Title";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "LDx-72-C66"; */
+"LDx-72-C66.text" = "Subtitle";
+
+/* Class = "IBUITextView"; text = "http://www.stanford.edu"; ObjectID = "Mys-hl-X9B"; */
+"Mys-hl-X9B.text" = "http://www.stanford.edu";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "VeU-AO-Q22"; */
+"VeU-AO-Q22.text" = "Subtitle";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "ZaO-yT-K6T"; */
+"ZaO-yT-K6T.normalTitle" = "C.a.n.c.e.l";
+
+/* Class = "IBUIBarButtonItem"; title = "URL"; ObjectID = "cgl-5K-KGU"; */
+"cgl-5K-KGU.title" = "U.R.L";
+
+/* Class = "IBUIButton"; normalTitle = "Take Photo"; ObjectID = "fAs-7V-UJa"; */
+"fAs-7V-UJa.normalTitle" = "T.a.k.e P.h.o.t.o";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "qcJ-zY-hhd"; */
+"qcJ-zY-hhd.text" = "S.u.b.t.i.t.l.e";
